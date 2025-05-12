@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Salt, ArrowRight } from "lucide-react";
+import { Leaf, ArrowRight } from "lucide-react";
 
 const CallToAction = () => {
   return (
@@ -15,7 +15,7 @@ const CallToAction = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
             <div className="lg:w-2/3">
               <div className="inline-flex items-center rounded-full bg-ocean/10 px-3 py-1 text-sm text-ocean mb-6">
-                <Salt className="mr-2 h-4 w-4" />
+                <Leaf className="mr-2 h-4 w-4" />
                 <span>Join Our Ecosystem</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to make a real climate impact?</h2>
