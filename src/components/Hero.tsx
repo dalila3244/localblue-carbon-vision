@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="relative pt-20 overflow-hidden">
       {/* Background image with overlay */}
-      <div className="absolute inset-0 bg-brittany-coast bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-ocean-coast bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
       </div>
       
