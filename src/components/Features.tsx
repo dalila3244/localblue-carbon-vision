@@ -1,11 +1,11 @@
 
-import { Earth, Database, ChartLine, Money } from "lucide-react";
+import { Globe, Database, LineChart, Wallet } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Features = () => {
   const features = [
     {
-      icon: <Earth className="h-10 w-10 text-ocean" />,
+      icon: <Globe className="h-10 w-10 text-ocean" />,
       title: "AI-Powered Monitoring",
       description: "Leverage satellite imagery and advanced machine learning algorithms to monitor coastal ecosystems with precision and accuracy."
     },
@@ -15,12 +15,12 @@ const Features = () => {
       description: "Accurately measure and verify carbon sequestration rates in mangroves, seagrass beds, and salt marshes."
     },
     {
-      icon: <ChartLine className="h-10 w-10 text-ocean" />,
+      icon: <LineChart className="h-10 w-10 text-ocean" />,
       title: "Real-Time Analytics",
       description: "Access comprehensive data on carbon storage, ecosystem health, and restoration progress through our intuitive dashboard."
     },
     {
-      icon: <Money className="h-10 w-10 text-ocean" />,
+      icon: <Wallet className="h-10 w-10 text-ocean" />,
       title: "Carbon Credit Marketplace",
       description: "Connect local communities and conservation organizations with corporate buyers seeking high-quality blue carbon offsets."
     }
