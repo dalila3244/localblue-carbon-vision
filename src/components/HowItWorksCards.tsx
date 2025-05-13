@@ -1,10 +1,35 @@
 
 import React, { useState } from 'react';
-import { Phone, Satellite, Shield, Coins } from "lucide-react";
+import { Satellite, Shield, Coins } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Progress } from "@/components/ui/progress";
 import { HoverCard, HoverCardTrigger, HoverCardContent } from "@/components/ui/hover-card";
+
+// Custom iPhone Camera icon component
+const IPhoneCamera = ({ className }: { className?: string }) => {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="1.5" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      className={className}
+    >
+      {/* Phone body */}
+      <rect x="5" y="2" width="14" height="20" rx="2" />
+      {/* Camera lens */}
+      <circle cx="12" cy="8" r="3" />
+      {/* Camera flash */}
+      <circle cx="16" cy="5.5" r="1" />
+      {/* Home button */}
+      <circle cx="12" cy="18" r="1.5" />
+    </svg>
+  );
+};
 
 const HowItWorksCards = () => {
   const [progress, setProgress] = useState(0);
@@ -18,7 +43,7 @@ const HowItWorksCards = () => {
     {
       id: 1,
       label: "Capture",
-      icon: <Phone className="h-12 w-12 text-mangrove" />,
+      icon: <IPhoneCamera className="h-12 w-12 text-mangrove" />,
       hoverText: "Phone photos are auto-GPS-tagged; mini-drones follow pre-set grids to hit 4 cm/px resolution for AI training.",
       content: (
         <div className="w-full">
@@ -26,7 +51,7 @@ const HowItWorksCards = () => {
             <CarouselContent>
               <CarouselItem>
                 <div className="flex justify-center items-center h-32">
-                  <Phone className="h-16 w-16 text-ocean" />
+                  <IPhoneCamera className="h-16 w-16 text-ocean" />
                 </div>
               </CarouselItem>
               <CarouselItem>
