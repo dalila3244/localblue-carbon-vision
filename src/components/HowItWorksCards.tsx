@@ -6,8 +6,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Progress } from "@/components/ui/progress";
 import { HoverCard, HoverCardTrigger, HoverCardContent } from "@/components/ui/hover-card";
 
-// Custom iPhone Camera icon component
-const IPhoneCamera = ({ className }: { className?: string }) => {
+// Custom Drone icon component
+const DroneIcon = ({ className }: { className?: string }) => {
   return (
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
@@ -19,14 +19,20 @@ const IPhoneCamera = ({ className }: { className?: string }) => {
       strokeLinejoin="round" 
       className={className}
     >
-      {/* Phone body */}
-      <rect x="5" y="2" width="14" height="20" rx="2" />
-      {/* Camera lens */}
-      <circle cx="12" cy="8" r="3" />
-      {/* Camera flash */}
-      <circle cx="16" cy="5.5" r="1" />
-      {/* Home button */}
-      <circle cx="12" cy="18" r="1.5" />
+      {/* Drone body */}
+      <rect x="9" y="9" width="6" height="6" rx="1" />
+      {/* Propeller arms */}
+      <line x1="4" y1="4" x2="8" y2="8" />
+      <line x1="4" y1="20" x2="8" y2="16" />
+      <line x1="20" y1="4" x2="16" y2="8" />
+      <line x1="20" y1="20" x2="16" y2="16" />
+      {/* Propellers */}
+      <circle cx="4" cy="4" r="2" />
+      <circle cx="4" cy="20" r="2" />
+      <circle cx="20" cy="4" r="2" />
+      <circle cx="20" cy="20" r="2" />
+      {/* Camera */}
+      <circle cx="12" cy="15" r="1" />
     </svg>
   );
 };
@@ -43,7 +49,7 @@ const HowItWorksCards = () => {
     {
       id: 1,
       label: "Capture",
-      icon: <IPhoneCamera className="h-12 w-12 text-mangrove" />,
+      icon: <DroneIcon className="h-12 w-12 text-mangrove" />,
       hoverText: "Phone photos are auto-GPS-tagged; mini-drones follow pre-set grids to hit 4 cm/px resolution for AI training.",
       content: (
         <div className="w-full">
@@ -51,7 +57,7 @@ const HowItWorksCards = () => {
             <CarouselContent>
               <CarouselItem>
                 <div className="flex justify-center items-center h-32">
-                  <IPhoneCamera className="h-16 w-16 text-ocean" />
+                  <DroneIcon className="h-16 w-16 text-ocean" />
                 </div>
               </CarouselItem>
               <CarouselItem>
