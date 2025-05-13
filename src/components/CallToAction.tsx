@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Leaf, ArrowRight } from "lucide-react";
-
 const CallToAction = () => {
-  return (
-    <section id="contact" className="section relative overflow-hidden">
+  return <section id="contact" className="section relative overflow-hidden">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-salt-marsh bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-gradient-to-r from-coral to-mangrove"></div>
@@ -17,7 +14,7 @@ const CallToAction = () => {
               <Leaf className="mr-2 h-4 w-4" />
               <span>Join Our Ecosystem</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white font-poppins">Bring BlueCarbon Nexus to your coastline — or fund the next pilot</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white font-poppins">Bring LocalBlueX to your coastline — or fund the next pilot</h2>
             <p className="text-lg text-white/90 mb-8 font-inter max-w-3xl">
               Whether you're a conservation organization, local community, or impact investor, LocalBlue X provides the technology and marketplace to turn coastal ecosystems into sustainable revenue streams.
             </p>
@@ -32,8 +29,6 @@ const CallToAction = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CallToAction;

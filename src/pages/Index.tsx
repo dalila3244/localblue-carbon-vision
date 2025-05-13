@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
@@ -9,10 +8,8 @@ import CallToAction from "@/components/CallToAction";
 import PilotHighlight from "@/components/PilotHighlight";
 import ImpactMetrics from "@/components/ImpactMetrics";
 import { Waves, Mail, Linkedin, Twitter } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       <Toaster />
       <NavBar />
       <Hero />
@@ -63,8 +60,8 @@ const Index = () => {
               
               {/* Office locations */}
               <div className="text-gray-400 mb-6">
-                <div className="mb-1"><strong>Paris Office:</strong> 15 Rue de la Paix, 75002 Paris</div>
-                <div><strong>Guadeloupe Field Station:</strong> Pointe-à-Pitre 97110</div>
+                
+                
               </div>
               
               {/* Contact */}
@@ -126,9 +123,7 @@ const Index = () => {
           
           {/* EU funding disclaimer */}
           <div className="mt-8 pt-8 border-t border-gray-800">
-            <div className="bg-gray-800 p-3 rounded text-sm text-gray-400 mb-4">
-              This project has received funding from the European Union's Horizon Europe research and innovation program under grant agreement No. 123456789.
-            </div>
+            
           </div>
           
           <div className="mt-4 flex flex-col md:flex-row justify-between items-center">
@@ -144,8 +139,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
