@@ -1,5 +1,5 @@
 
-import { Satellite, Shield, Drone, Phone } from "lucide-react";
+import { Satellite, Shield, Compass, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Features = () => {
@@ -15,7 +15,7 @@ const Features = () => {
       description: "Accurately measure and verify carbon sequestration rates in mangroves, seagrass beds, and salt marshes."
     },
     {
-      icon: <Drone className="h-10 w-10 text-ocean" />,
+      icon: <Compass className="h-10 w-10 text-ocean" />,
       title: "Real-Time Analytics",
       description: "Access comprehensive data on carbon storage, ecosystem health, and restoration progress through our intuitive dashboard."
     },

@@ -1,5 +1,5 @@
 
-import { ArrowRight, Satellite, Shield, Drone, Leaf } from "lucide-react";
+import { ArrowRight, Satellite, Shield, Compass, Leaf } from "lucide-react";
 
 const Process = () => {
   const steps = [
@@ -17,7 +17,7 @@ const Process = () => {
       description: "Machine learning models calculate carbon sequestration rates with validated accuracy.",
       image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&q=80&w=600",
       alt: "Data analytics dashboard showing carbon metrics",
-      icon: <Drone className="h-6 w-6 text-mangrove" />
+      icon: <Compass className="h-6 w-6 text-mangrove" />
     },
     {
       number: "03",
