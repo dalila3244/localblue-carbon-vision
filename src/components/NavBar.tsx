@@ -33,7 +33,7 @@ const NavBar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#about" className="text-gray-600 hover:text-ocean transition-colors">Why LocalBlueX</a>
             <a href="#process" className="text-gray-600 hover:text-ocean transition-colors">How It Works</a>
-            <a href="#pilot" className="text-gray-600 hover:text-ocean transition-colors">Pilot 2025</a>
+            <a href="#pilot" className="text-gray-600 hover:text-ocean transition-colors">Pilot 2026</a>
             <a href="#contact" className="text-gray-600 hover:text-ocean transition-colors">Get Involved</a>
           </div>
           
@@ -61,7 +61,7 @@ const NavBar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="#about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-ocean">Why LocalBlueX</a>
             <a href="#process" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-ocean">How It Works</a>
-            <a href="#pilot" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-ocean">Pilot 2025</a>
+            <a href="#pilot" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-ocean">Pilot 2026</a>
             <a href="#contact" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-ocean">Get Involved</a>
           </div>
         </div>
