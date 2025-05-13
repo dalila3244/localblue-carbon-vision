@@ -17,19 +17,16 @@ const Hero = () => {
 
   return (
     <div className="relative pt-[60px] overflow-hidden h-screen">
-      {/* Video Background with overlay */}
+      {/* Ocean Coast Background Image with overlay */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-ocean/80 to-ocean/60 z-10"></div>
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          className="absolute w-full h-full object-cover transform scale-105 transition-transform duration-[4s] ease-linear"
+        <div className="absolute inset-0 bg-gradient-to-r from-ocean/60 to-ocean/40 z-10"></div>
+        <div 
+          className="absolute inset-0 bg-ocean-coast bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&q=80&w=1920')",
+          }}
         >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-coastline-with-turquoise-water-43127-large.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        </div>
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
