@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -58,8 +59,8 @@ const PilotHighlight = () => {
           
           <div className="lg:w-1/2" ref={mapContainerRef}>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden h-[400px] relative">
-              {/* Map placeholder - in a real implementation, this would be a Leaflet map */}
-              <div className="absolute inset-0 bg-ocean-coast bg-cover bg-center opacity-80"></div>
+              {/* Map placeholder with mangrove forest background */}
+              <div className="absolute inset-0 bg-mangrove bg-cover bg-center opacity-80"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-lg">
                   <div className="flex items-center">
