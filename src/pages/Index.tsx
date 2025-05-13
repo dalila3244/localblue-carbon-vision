@@ -2,10 +2,11 @@
 import { Toaster } from "@/components/ui/toaster";
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
+import PainPointSection from "@/components/PainPointSection";
 import Features from "@/components/Features";
 import Process from "@/components/Process";
 import CallToAction from "@/components/CallToAction";
-import { Leaf, Waves } from "lucide-react";
+import { Waves } from "lucide-react";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <Toaster />
       <NavBar />
       <Hero />
+      <PainPointSection />
       <Features />
       
       {/* Stats Section */}
@@ -48,7 +50,7 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="mb-8 lg:mb-0">
               <div className="flex items-center mb-4">
-                <Leaf className="h-8 w-8 text-ocean mr-2" />
+                <Waves className="h-8 w-8 text-ocean mr-2" />
                 <span className="font-bold text-2xl">LocalBlue<span className="text-ocean">X</span></span>
               </div>
               <p className="text-gray-400 max-w-xs">
