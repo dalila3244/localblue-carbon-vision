@@ -17,28 +17,7 @@ const Index = () => {
       <Features />
       
       {/* Stats Section */}
-      <section className="bg-ocean py-16 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2">120+</div>
-              <p className="text-ocean-light">Conservation Projects</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">25</div>
-              <p className="text-ocean-light">Countries</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">2.4M</div>
-              <p className="text-ocean-light">CO₂ Tons Sequestered</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">$18M</div>
-              <p className="text-ocean-light">Carbon Credits Sold</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       
       <HowItWorksCards />
       <PilotHighlight />
