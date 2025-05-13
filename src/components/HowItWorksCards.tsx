@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Phone, Satellite, Shield, Coin } from "lucide-react";
+import { Phone, Satellite, Shield, Coins } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Progress } from "@/components/ui/progress";
@@ -60,12 +60,12 @@ const HowItWorksCards = () => {
     {
       id: 3,
       label: "Fund",
-      icon: <Coin className="h-12 w-12 text-mangrove" />,
+      icon: <Coins className="h-12 w-12 text-mangrove" />,
       hoverText: "Smart-contract escrows 30 % of every credit sale to the local conservation fund—instantly, on chain.",
       content: (
         <div className="flex flex-col items-center justify-center h-32 space-y-2">
           <div className="relative flex items-center">
-            <Coin className="h-16 w-16 text-coral animate-bounce" />
+            <Coins className="h-16 w-16 text-coral animate-bounce" />
             <div className="ml-6 w-16 h-16 bg-nature-green rounded-lg flex justify-center items-center">
               <div className="w-8 h-8 bg-nature-soft rounded-full"></div>
             </div>
