@@ -19,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+				inter: ['Inter', 'sans-serif']
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -63,15 +67,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				// New custom color palette
 				ocean: {
-					DEFAULT: '#0EA5E9',
+					DEFAULT: '#00546B', // Ocean Teal
 					light: '#33C3F0',
 					dark: '#0284C7'
 				},
-				earth: {
-					DEFAULT: '#8B5D33',
-					light: '#D8B894',
-					dark: '#403E43'
+				mangrove: {
+					DEFAULT: '#2E8B57', // Mangrove Green
+				},
+				coral: {
+					DEFAULT: '#FF695E', // Coral Accent
+				},
+				sand: {
+					DEFAULT: '#F7F6F4', // Off-white Sand
 				},
 				nature: {
 					green: '#4ADE80',
