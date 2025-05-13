@@ -7,22 +7,22 @@ const Features = () => {
     {
       icon: <Satellite className="h-10 w-10 text-ocean" />,
       title: "AI-Powered Monitoring",
-      description: "Leverage satellite imagery and advanced machine learning algorithms to monitor coastal ecosystems with precision and accuracy."
+      description: "Every citizen snapshot is fused with Sentinel-2 and drone mosaics. Our convolutional-net model flags canopy loss down to 5 m², giving managers near-real-time alerts before damage spreads."
     },
     {
       icon: <Shield className="h-10 w-10 text-ocean" />,
       title: "Verified Quantification",
-      description: "Accurately measure and verify carbon sequestration rates in mangroves, seagrass beds, and salt marshes."
+      description: "Automated MRV engine fills the full Verra VM0033 template, calculates biomass, soil carbon and uncertainty bands, then packages the dataset for auditor sign-off—no spreadsheets, no guesswork."
     },
     {
       icon: <Compass className="h-10 w-10 text-ocean" />,
       title: "Real-Time Analytics",
-      description: "Access comprehensive data on carbon storage, ecosystem health, and restoration progress through our intuitive dashboard."
+      description: "Interactive dashboard shows carbon stocks, tree-growth rates and storm-damage hotspots. Download raw GeoTIFFs, share public StoryMaps or trigger SMS warnings to local rangers with one click."
     },
     {
       icon: <Phone className="h-10 w-10 text-ocean" />,
       title: "Carbon Credit Marketplace",
-      description: "Connect local communities and conservation organizations with corporate buyers seeking high-quality blue carbon offsets."
+      description: "Once verified, credits are tokenised on our public-permissioned chain, insured against storm loss and listed to pre-screened corporate buyers—streamlining payouts to community wallets within 48 hours."
     }
   ];
 
@@ -30,7 +30,7 @@ const Features = () => {
     <section id="features" className="section bg-sand">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-ocean font-poppins">Powering Blue Carbon Projects Worldwide</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-ocean font-poppins">One Stream of Data, Two Powerful Products</h2>
           <p className="text-xl text-ocean/70 max-w-3xl mx-auto font-inter">
             Our platform makes it easy to monitor, verify, and monetize carbon sequestration in coastal ecosystems.
           </p>

@@ -4,7 +4,7 @@ import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import PainPointSection from "@/components/PainPointSection";
 import Features from "@/components/Features";
-import Process from "@/components/Process";
+import HowItWorksCards from "@/components/HowItWorksCards";
 import CallToAction from "@/components/CallToAction";
 import { Waves } from "lucide-react";
 
@@ -41,7 +41,7 @@ const Index = () => {
         </div>
       </section>
       
-      <Process />
+      <HowItWorksCards />
       <CallToAction />
       
       {/* Footer */}
