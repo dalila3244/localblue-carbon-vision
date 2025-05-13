@@ -6,7 +6,9 @@ import PainPointSection from "@/components/PainPointSection";
 import Features from "@/components/Features";
 import HowItWorksCards from "@/components/HowItWorksCards";
 import CallToAction from "@/components/CallToAction";
-import { Waves } from "lucide-react";
+import PilotHighlight from "@/components/PilotHighlight";
+import ImpactMetrics from "@/components/ImpactMetrics";
+import { Waves, Mail, Linkedin, Twitter } from "lucide-react";
 
 const Index = () => {
   return (
@@ -42,9 +44,11 @@ const Index = () => {
       </section>
       
       <HowItWorksCards />
+      <PilotHighlight />
+      <ImpactMetrics />
       <CallToAction />
       
-      {/* Footer */}
+      {/* Footer with updated structure */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between">
@@ -53,9 +57,28 @@ const Index = () => {
                 <Waves className="h-8 w-8 text-ocean mr-2" />
                 <span className="font-bold text-2xl">LocalBlue<span className="text-ocean">X</span></span>
               </div>
-              <p className="text-gray-400 max-w-xs">
+              <p className="text-gray-400 max-w-xs mb-4">
                 AI-powered platform monitoring and monetizing carbon sequestration in coastal ecosystems.
               </p>
+              
+              {/* Office locations */}
+              <div className="text-gray-400 mb-6">
+                <div className="mb-1"><strong>Paris Office:</strong> 15 Rue de la Paix, 75002 Paris</div>
+                <div><strong>Guadeloupe Field Station:</strong> Pointe-à-Pitre 97110</div>
+              </div>
+              
+              {/* Contact */}
+              <div className="flex space-x-4 mb-6">
+                <a href="mailto:contact@localblue-x.com" className="text-gray-400 hover:text-white transition-colors">
+                  <Mail className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <Twitter className="h-5 w-5" />
+                </a>
+              </div>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -101,7 +124,14 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+          {/* EU funding disclaimer */}
+          <div className="mt-8 pt-8 border-t border-gray-800">
+            <div className="bg-gray-800 p-3 rounded text-sm text-gray-400 mb-4">
+              This project has received funding from the European Union's Horizon Europe research and innovation program under grant agreement No. 123456789.
+            </div>
+          </div>
+          
+          <div className="mt-4 flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-500 mb-4 md:mb-0">
               © 2025 LocalBlue X. All rights reserved.
             </div>
@@ -109,6 +139,7 @@ const Index = () => {
               <a href="#" className="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
               <a href="#" className="text-gray-500 hover:text-white transition-colors">Cookie Policy</a>
+              <a href="#" className="text-gray-500 hover:text-white transition-colors">Media Kit PDF</a>
             </div>
           </div>
         </div>
