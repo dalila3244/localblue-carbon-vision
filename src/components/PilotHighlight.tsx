@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Download, MapPin } from "lucide-react";
+
 const PilotHighlight = () => {
   const [signups, setSignups] = useState(68);
   const [carbonCredits, setCarbonCredits] = useState(0);
@@ -40,16 +41,13 @@ const PilotHighlight = () => {
       return () => clearInterval(interval);
     }
   }, [isVisible]);
+  
   return <section id="pilot" className="bg-coral py-16 sm:py-24 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="lg:w-1/2">
             <h3 className="text-white text-2xl font-bold mb-4 font-poppins">Launching in Guadeloupe</h3>
             <p className="text-white/90 mb-8 text-lg">Our 2026 pilot program is rolling out across the protected mangrove forests of Guadeloupe, working with local communities and conservation groups to map, monitor, and monetize this crucial blue carbon ecosystem.</p>
-            
-            
-            
-            
             
             <Button size="lg" className="bg-white text-coral hover:bg-white/90">
               <Download className="mr-2 h-5 w-5" />
@@ -59,8 +57,15 @@ const PilotHighlight = () => {
           
           <div className="lg:w-1/2" ref={mapContainerRef}>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden h-[400px] relative">
-              {/* Map placeholder with mangrove forest background */}
-              <div className="absolute inset-0 bg-mangrove bg-cover bg-center opacity-80"></div>
+              {/* Map with uploaded mangrove image rotated 90 degrees */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center" 
+                style={{
+                  backgroundImage: "url('/lovable-uploads/581794a1-afd2-403f-bd6e-3f839b54ddd9.png')",
+                  transform: "rotate(90deg)",
+                  transformOrigin: "center"
+                }}
+              ></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-lg">
                   <div className="flex items-center">
@@ -80,4 +85,5 @@ const PilotHighlight = () => {
       </div>
     </section>;
 };
+
 export default PilotHighlight;
